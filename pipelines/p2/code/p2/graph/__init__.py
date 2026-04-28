@@ -1,1 +1,0 @@
-from .q import q
