@@ -11,20 +11,6 @@ buildSystemDetails:
   author: null
   createdAt: '2026-04-28 05:55:49'
 pipelines:
-  pipelines/p1:
-    name: p1
-    description: ''
-    author: g.ayush@prophecy.io
-    mode: batch
-    artefactID: ''
-    language: python
-    createdAt: '2026-04-28 05:55:49'
-    datasets:
-      inputs:
-      - datasets/q
-      outputs: []
-    subgraphs: []
-    dependencies: {}
   pipelines/p2:
     name: p2
     description: ''
