@@ -10,7 +10,21 @@ buildSystemDetails:
   buildSystem: wheel
   author: null
   createdAt: '2026-04-28 05:55:49'
-pipelines: {}
+pipelines:
+  pipelines/p3:
+    name: p3
+    description: ''
+    author: g.ayush@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2026-04-28 06:38:39'
+    datasets:
+      inputs:
+      - datasets/q
+      outputs: []
+    subgraphs: []
+    dependencies: {}
 datasets:
   datasets/q:
     name: q
