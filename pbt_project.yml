@@ -10,7 +10,35 @@ buildSystemDetails:
   buildSystem: wheel
   author: null
   createdAt: '2026-04-28 05:55:49'
-pipelines: {}
+pipelines:
+  pipelines/HashiCorpVault:
+    name: HashiCorpVault
+    description: ''
+    author: g.ayush@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2026-05-15 07:02:23'
+    datasets:
+      inputs:
+      - datasets/tgt
+      outputs: []
+    subgraphs: []
+    dependencies: {}
+  pipelines/p1:
+    name: p1
+    description: ''
+    author: g.ayush@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2026-05-25 07:41:10'
+    datasets:
+      inputs:
+      - datasets/ds
+      outputs: []
+    subgraphs: []
+    dependencies: {}
 datasets:
   datasets/q:
     name: q
@@ -25,8 +53,59 @@ datasets:
         description: ''
         author: g.ayush@prophecy.io
         createdAt: '2026-04-28 05:56:41'
+  datasets/ds:
+    name: ds
+    description: ''
+    author: g.ayush@prophecy.io
+    createdAt: '2026-05-25 07:44:47'
+    mode: batch
+    physicalDatasets:
+      guides-prod-fabric:
+        fabricId: 30674
+        datasetType: File
+        description: ''
+        author: g.ayush@prophecy.io
+        createdAt: '2026-05-25 07:44:47'
+  datasets/tgt:
+    name: tgt
+    description: ''
+    author: g.ayush@prophecy.io
+    createdAt: '2026-05-25 07:47:47'
+    mode: batch
+    physicalDatasets:
+      guides-prod-fabric:
+        fabricId: 30674
+        datasetType: Database
+        description: ''
+        author: g.ayush@prophecy.io
+        createdAt: '2026-05-25 07:47:47'
 templates: {}
-jobs: {}
+jobs:
+  jobs/j:
+    name: j
+    description: ''
+    fabricUID: 37363
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: smallnew
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2026-07-01 16:35:18'
+    author: g.ayush@prophecy.io
+    models: []
+    sqlProjects: []
 gemContainer:
   languageVersion: '3.10'
   gemLibsVersion: 1.3.4.0
@@ -52,16 +131,23 @@ sqlPipeline: null
 dependencies:
 - modifiedAt: '2026-04-28T05:55:49.702172Z'
   name: plibMaven
-  version: 9.2.0
+  version: 9.3.0
   id: '524020117'
   createdAt: '2026-04-28T05:55:49.702172Z'
   type: plibMaven
-- modifiedAt: '2026-04-28T05:55:49.702172Z'
-  name: plibPypi
-  version: 2.1.16
+  entity: Project
+  enabled: true
+- modifiedAt: '2026-05-25T07:52:07.561Z'
+  name: ProphecyLibsPython
+  version: 2.1.17
   id: '1083852458'
   createdAt: '2026-04-28T05:55:49.702172Z'
   type: plibPypi
+  enabled: true
+  description: Default dependency for Prophecy Libs
+  editable: true
+  scope: Project
+  entity: Project
 projectDependencies:
   '12654':
     projectUID: 12654

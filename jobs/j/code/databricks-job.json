@@ -1,0 +1,53 @@
+{
+  "fabric_id" : "37363",
+  "components" : [ ],
+  "request" : {
+    "format" : "MULTI_TASK",
+    "name" : "j",
+    "job_clusters" : [ {
+      "job_cluster_key" : "j_default_smallnew",
+      "new_cluster" : {
+        "spark_version" : "14.3.x-scala2.12",
+        "node_type_id" : "i3.xlarge",
+        "num_workers" : 0,
+        "custom_tags" : { },
+        "enable_elastic_disk" : false,
+        "spark_conf" : {
+          "spark.prophecy.metadata.fabric.id" : "37363",
+          "spark.prophecy.metadata.job.uri" : "__PROJECT_ID_PLACEHOLDER__/jobs/j",
+          "spark.prophecy.metadata.is.interactive.run" : "false",
+          "spark.prophecy.project.id" : "__PROJECT_ID_PLACEHOLDER__",
+          "spark.prophecy.metadata.user.id" : "9928",
+          "spark.prophecy.tasks" : "H4sIAAAAAAAAAKuuBQBDv6ajAgAAAA==",
+          "spark.prophecy.metadata.job.branch" : "__PROJECT_RELEASE_VERSION_PLACEHOLDER__",
+          "spark.prophecy.metadata.url" : "__PROPHECY_URL_PLACEHOLDER__",
+          "spark.prophecy.execution.metrics.disabled" : "false",
+          "spark.prophecy.execution.metrics.component-metrics.table" : "ayush_demos.demos.component_run",
+          "spark.prophecy.execution.metrics.pipeline-metrics.table" : "ayush_demos.demos.pipeline_run",
+          "spark.prophecy.execution.service.url" : "wss://app.prophecy.io/execution/eventws",
+          "spark.prophecy.execution.metrics.interims.table" : "ayush_demos.demos.interim_run",
+          "spark.databricks.isv.product" : "prophecy"
+        },
+        "runtime_engine" : "PHOTON",
+        "aws_attributes" : {
+          "first_on_demand" : 1,
+          "availability" : "SPOT_WITH_FALLBACK",
+          "zone_id" : "auto",
+          "spot_bid_price_percent" : 100
+        },
+        "data_security_mode" : "DATA_SECURITY_MODE_DEDICATED",
+        "is_single_node" : true,
+        "kind" : "CLASSIC_PREVIEW"
+      }
+    } ],
+    "email_notifications" : { },
+    "tasks" : [ ],
+    "max_concurrent_runs" : 1
+  },
+  "cluster_mode" : {
+    "clusterMode" : "Single"
+  },
+  "secret_scope" : "prophecy_jobs_12873",
+  "sorted_processes" : [ ],
+  "is_prophecy_managed_fabric" : false
+}

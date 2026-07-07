@@ -8,14 +8,15 @@
     "codeGenConfiguration" : {
       "editableConfig" : true,
       "plibVersion" : {
-        "mavenVersion" : "9.2.0",
-        "pyPiVersion" : "2.1.16"
+        "mavenVersion" : "9.3.0",
+        "pyPiVersion" : "2.1.17"
       },
       "sparkConfigJinjaEnabled" : true,
       "workflowMode" : "batch"
     },
     "id" : "1",
     "uri" : "pipelines/p1",
+    "sourceSuggestions" : [ ],
     "pipelineSettingsInfo" : {
       "applicationName" : "p1",
       "hasApplication" : true,
@@ -26,7 +27,7 @@
       }
     },
     "language" : "python",
-    "fabricId" : "21998",
+    "fabricId" : "30674",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
@@ -75,7 +76,7 @@
       "externalDependencies" : [ ]
     } ],
     "isImported" : false,
-    "interimMode" : "Full",
+    "interimMode" : "Selective",
     "interimModeEnabled" : true,
     "visualCodeInterimMode" : "Disabled",
     "recordsLimit" : {
@@ -86,25 +87,51 @@
     "configTopLevelPackage" : "p1",
     "configurationVersion" : "v2"
   },
-  "connections" : [ ],
+  "connections" : [ {
+    "id" : "k3Pl_Vr6Tz5lb6K5FkTt9",
+    "source" : "XTcIxnyidJ3DnPsxN3aiq$$wz9sXKRvDIvPLyfe3UzHU",
+    "sourcePort" : "pCTuaZ446moqVZQF8RFIK$$D-p683y6mvY6T211ULfmc",
+    "target" : "LljYH8RbnihU79oZHy_RL$$Yux_2-cAlz3F6zIFzUmfo",
+    "targetPort" : "-T7DRkCFt5dxSYgZ_SgWr$$y1SGpkpJVorM0r_mG6jL3"
+  }, {
+    "id" : "LJjFzf8ELj9-xM1UpS4bk$$rf79A92LvoXd1oPTMs5Mi",
+    "source" : "LljYH8RbnihU79oZHy_RL$$Yux_2-cAlz3F6zIFzUmfo",
+    "sourcePort" : "YItGCFh_mSFHwUPXEJB8I$$Z7ypOQqgP9uM7FyzhPuqN",
+    "target" : "_GHZoKn6tm_1T9Ta71H8m$$o3N5-CaGqa46B-otLfuqa",
+    "targetPort" : "HOCiV2vApGDf6b_PYIN9q$$a8YyOo4BMCBZMazrJCb1A"
+  }, {
+    "id" : "3HP23YGKfj7g0QE-zuHnK$$-XI1CnnLTnperYCUgm87i",
+    "source" : "_GHZoKn6tm_1T9Ta71H8m$$o3N5-CaGqa46B-otLfuqa",
+    "sourcePort" : "yXWtOE_j_W_mx4f2iVgpW$$kw4kWigiMkjzic62ppTta",
+    "target" : "vZZHR5yUYRb7P8jvNhP5R$$d50OKKd95qJhnumXX6PO7",
+    "targetPort" : "k9oBewLXOVH6D9pFCNX43$$WKYLV_rsLSQbamcUz7gR9"
+  }, {
+    "id" : "PRENQXXH1lDyEDpPb3h76$$xeSiG6yQaNf2Ri71v9M2m",
+    "source" : "vZZHR5yUYRb7P8jvNhP5R$$d50OKKd95qJhnumXX6PO7",
+    "sourcePort" : "r463oIWW_8TauYgiu19pZ$$qCUg2nmuq-5YrwFxLxgZp",
+    "target" : "HiRr4n7ZU86kKm4ZeRz6o$$ugP0GD2dU1yPjK5A-9JFz",
+    "targetPort" : "j6rLzOYQU7Vhif8VlDyxO$$gqadHrbvBwnRdopPbCiEv"
+  } ],
   "processes" : {
-    "wR-RfdHGc0-Jklve5A55M$$now9EDNdaJybOvNVPGyvZ" : {
-      "id" : "wR-RfdHGc0-Jklve5A55M$$now9EDNdaJybOvNVPGyvZ",
+    "XTcIxnyidJ3DnPsxN3aiq$$wz9sXKRvDIvPLyfe3UzHU" : {
+      "id" : "XTcIxnyidJ3DnPsxN3aiq$$wz9sXKRvDIvPLyfe3UzHU",
       "component" : "Source",
       "metadata" : {
-        "label" : "q",
-        "slug" : "q",
-        "x" : -840,
-        "y" : -420,
+        "label" : "ds",
+        "slug" : "ds",
+        "x" : -920,
+        "y" : -440,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false
+        "isImported" : false,
+        "comment" : "Creates a sample dataset for business analysis or testing purposes.",
+        "autoUpdateComment" : true
       },
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "lcS9vGJ865UqQxMVTx-RK$$vSB47POg1y3ZWGWHM6ixF",
+          "id" : "pCTuaZ446moqVZQF8RFIK$$D-p683y6mvY6T211ULfmc",
           "slug" : "out"
         } ],
         "selectedInputFields" : [ ],
@@ -112,7 +139,315 @@
         "autoUpdateOnRun" : false
       },
       "properties" : {
-        "datasetId" : "datasets/q"
+        "datasetId" : "datasets/ds"
+      }
+    },
+    "_GHZoKn6tm_1T9Ta71H8m$$o3N5-CaGqa46B-otLfuqa" : {
+      "id" : "_GHZoKn6tm_1T9Ta71H8m$$o3N5-CaGqa46B-otLfuqa",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_1",
+        "slug" : "Reformat_1",
+        "x" : -420,
+        "y" : -640,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "dataPreview" : false,
+        "showRecordsCount" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "HOCiV2vApGDf6b_PYIN9q$$a8YyOo4BMCBZMazrJCb1A",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "a",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "b",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "c",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "yXWtOE_j_W_mx4f2iVgpW$$kw4kWigiMkjzic62ppTta",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.55&projectSubscriptionProjectId=12654&path=gems/Reformat",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "LljYH8RbnihU79oZHy_RL$$Yux_2-cAlz3F6zIFzUmfo" : {
+      "id" : "LljYH8RbnihU79oZHy_RL$$Yux_2-cAlz3F6zIFzUmfo",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "cast_columns_to_int",
+        "slug" : "cast_columns_to_int",
+        "x" : -660,
+        "y" : -660,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Standardizes data by ensuring key fields are represented as numbers, supporting reliable analysis and reporting.",
+        "autoUpdateComment" : true,
+        "dataPreview" : false,
+        "showRecordsCount" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "-T7DRkCFt5dxSYgZ_SgWr$$y1SGpkpJVorM0r_mG6jL3",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "a",
+              "type" : "float",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "b",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "c",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "YItGCFh_mSFHwUPXEJB8I$$Z7ypOQqgP9uM7FyzhPuqN",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "a",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "try_cast(a AS int)"
+          },
+          "description" : ""
+        }, {
+          "target" : "b",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "try_cast(b AS int)"
+          },
+          "description" : ""
+        }, {
+          "target" : "c",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "try_cast(c AS int)"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "-T7DRkCFt5dxSYgZ_SgWr$$y1SGpkpJVorM0r_mG6jL3##c", "-T7DRkCFt5dxSYgZ_SgWr$$y1SGpkpJVorM0r_mG6jL3##a", "-T7DRkCFt5dxSYgZ_SgWr$$y1SGpkpJVorM0r_mG6jL3##b" ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.55&projectSubscriptionProjectId=12654&path=gems/Reformat",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "HiRr4n7ZU86kKm4ZeRz6o$$ugP0GD2dU1yPjK5A-9JFz" : {
+      "id" : "HiRr4n7ZU86kKm4ZeRz6o$$ugP0GD2dU1yPjK5A-9JFz",
+      "component" : "SampleRows",
+      "metadata" : {
+        "label" : "random_sample_seven_rows",
+        "slug" : "random_sample_seven_rows",
+        "x" : -40,
+        "y" : -640,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Selects a random sample of seven records from the data, useful for unbiased reviews or quality checks.",
+        "autoUpdateComment" : true,
+        "dataPreview" : false,
+        "showRecordsCount" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "j6rLzOYQU7Vhif8VlDyxO$$gqadHrbvBwnRdopPbCiEv",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "a",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "b",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "c",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "i9NxWJRyQEHptwYbxXG1J$$bqtRafWyyY9hA06c5uXaq",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "sampling_ratio" : "7",
+        "with_replacement" : false,
+        "seed" : null,
+        "sampling_strategy" : "numR"
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.55&projectSubscriptionProjectId=12654&path=gems/SampleRows",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "vZZHR5yUYRb7P8jvNhP5R$$d50OKKd95qJhnumXX6PO7" : {
+      "id" : "vZZHR5yUYRb7P8jvNhP5R$$d50OKKd95qJhnumXX6PO7",
+      "component" : "Limit",
+      "metadata" : {
+        "label" : "Limit_1",
+        "slug" : "Limit_1",
+        "x" : -220,
+        "y" : -580,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "dataPreview" : false,
+        "showRecordsCount" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "k9oBewLXOVH6D9pFCNX43$$WKYLV_rsLSQbamcUz7gR9",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "a",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "b",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "c",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "r463oIWW_8TauYgiu19pZ$$qCUg2nmuq-5YrwFxLxgZp",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "limit" : "10"
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.55&projectSubscriptionProjectId=12654&path=gems/Limit",
+        "projectName" : "ProphecySparkBasicsPython"
       }
     }
   },

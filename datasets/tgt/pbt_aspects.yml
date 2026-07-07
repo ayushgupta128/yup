@@ -1,0 +1,25 @@
+version: 1
+schema:
+  type: struct
+  fields:
+  - name: a
+    type: integer
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: b
+    type: integer
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: c
+    type: integer
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []

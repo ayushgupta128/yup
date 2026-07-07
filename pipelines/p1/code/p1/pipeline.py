@@ -7,7 +7,11 @@ from prophecy.utils import *
 from p1.graph import *
 
 def pipeline(spark: SparkSession) -> None:
-    df_q = q(spark)
+    df_ds = ds(spark)
+    df_cast_columns_to_int = cast_columns_to_int(spark, df_ds)
+    df_Reformat_1 = Reformat_1(spark, df_cast_columns_to_int)
+    df_Limit_1 = Limit_1(spark, df_Reformat_1)
+    df_random_sample_seven_rows = random_sample_seven_rows(spark, df_Limit_1)
 
 def main():
     spark = SparkSession.builder.enableHiveSupport().appName("p1").getOrCreate()

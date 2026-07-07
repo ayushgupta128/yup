@@ -1,16 +1,19 @@
 from setuptools import setup, find_packages
 setup(
-    name = 'p1',
+    name = 'HashiCorpVault',
     version = '1.0',
-    packages = find_packages(include = ('p1*', )) + ['prophecy_config_instances', 'prophecy_config_instances.p1'],
+    packages = (
+      find_packages(include = ('hashicorpvault*', ))
+      + ['prophecy_config_instances', 'prophecy_config_instances.hashicorpvault']
+    ),
     package_dir = {'prophecy_config_instances' : 'configs/resources'},
-    package_data = {'prophecy_config_instances.p1' : ['*.json', '*.py', '*.conf']},
+    package_data = {'prophecy_config_instances.hashicorpvault' : ['*.json', '*.py', '*.conf']},
     description = 'workflow',
     install_requires = [
 'prophecy-libs==2.1.17'],
     entry_points = {
 'console_scripts' : [
-'main = p1.pipeline:main'], },
+'main = hashicorpvault.pipeline:main'], },
     data_files = [(".prophecy", [".prophecy/workflow.latest.json"])],
     extras_require = {
 'test' : ['pytest', 'pytest-html', 'pytest-cov'], }
