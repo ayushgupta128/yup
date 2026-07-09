@@ -24,6 +24,19 @@ pipelines:
       outputs: []
     subgraphs: []
     dependencies: {}
+  pipelines/eds:
+    name: eds
+    description: ''
+    author: g.ayush@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2026-07-09 05:14:36'
+    datasets:
+      inputs: []
+      outputs: []
+    subgraphs: []
+    dependencies: {}
 datasets: {}
 templates: {}
 jobs: {}
